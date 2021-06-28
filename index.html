@@ -142,6 +142,76 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/posts/55705/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Sylvan Ding">
+      <meta itemprop="description" content="A student with great passion for life!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sylvans Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/55705/" class="post-title-link" itemprop="url">情感数据对LSTM股票预测模型的影响研究</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2021-06-28 17:00:04 / Modified: 17:41:32" itemprop="dateCreated datePublished" datetime="2021-06-28T17:00:04+08:00">2021-06-28</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="情感数据对LSTM股票预测模型的影响研究"><a href="#情感数据对LSTM股票预测模型的影响研究" class="headerlink" title="情感数据对LSTM股票预测模型的影响研究"></a>情感数据对LSTM股票预测模型的影响研究</h1><blockquote>
+<p>作者：丁纪翔</p>
+<p>发布时间：06/28/2021</p>
+</blockquote>
+<p><strong>摘要</strong>：探究了情感结构化特征数据在LSTM股票预测模型中的影响。利用Pandas对所给数据进行预处理（数据载入、清洗与准备、规整、时间序列处理、数据聚合等）。<a id="toref1" href="#ref1">[1]</a> 借助NLTK和LM金融词库，对非结构化文本信息进行情感分析，并将所得结构化数据融入纯技术指标的股票数据中。分析各股票指标的相关性，实现数据降维。基于Keras的以MSE为误差评价方法的LSTM模型，实现对股票收盘价Close的预测。最终得出当训练样本充足时，融入了情感特征数据，使得预测精度适当增加的结论。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/55705/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/posts/2740/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -720,9 +790,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
       </div>
   </nav>
 </div>
