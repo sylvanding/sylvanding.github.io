@@ -1,0 +1,57 @@
+img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+/* Author headline links */
+#Author-Headline a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#Author-Headline a:hover {
+  background-color: #ff7d29;
+  color: #fff;
+}
+
+/* selection */
+::selection {
+  background: #ff7d29;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #ff7d29;
+  color: #ffffff;
+}
+::-webkit-selection {
+  background: #ff7d29;
+  color: #ffffff;
+}
+
+/* scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #f43f5e;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 3em;
+}
+::-webkit-scrollbar-track {
+  background-color: #ffbb64;
+  border-radius: 3em;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #ff7d29;
+}
+.dark ::-webkit-scrollbar-track {
+  background-color: #e6baa3;
+}

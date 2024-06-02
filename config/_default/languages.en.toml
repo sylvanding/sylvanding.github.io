@@ -1,0 +1,69 @@
+languageCode = "en"
+languageName = "English"
+languageDirection = "ltr"
+weight = 1
+
+title = "Sylvan Ding"
+copyright = "&copy; 2024 [Sylvan Ding](https://github.com/sylvanding) :star2:"
+
+[params]
+  dateFormat = "Mon Jan 2, 15:04, 2006"
+
+  # mainSections = ["posts", "projects", "welcome"]
+  mainSections = ["welcomes"]
+  description = "Welcome to Sylvan Ding's Daily Discoveries - This space is more than a hub for technical sharing, it's a record of my thoughts and experiences on life, travel, reading, and the path of scientific research. From the exploration of science research to the simple joys of daily life, I aim to share this diverse and colorful world with you. Follow my journey and together, let's discover the incredible beauty in life."
+
+[params.author]
+  name = "Sylvan Ding"
+  image = "img/author.png"
+  headline = """
+  Graduate Student at [BIT School of Medical Technology](https://smt.bit.edu.cn/)<br>\
+  Member of [XuLab](http://www.xulab.cc/) at the [Advanced Research Institute of Multidisciplinary Sciences](https://arims.bit.edu.cn/xztd/qkjs/4c78910cdd044179a185392b4e3bc101.htm)<br>\
+  Co-Founder of NutriVision - Pioneering Nutritional Analysis in Cuisine with AI
+  """
+  bio = "A graduate student at the [School of Medical Technology](https://smt.bit.edu.cn/), [Beijing Institute of Technology](https://www.bit.edu.cn/), where I am devoted to the study of super spatiotemporal resolution single-molecule localization microscopy based on deep learning at [XuLab](https://arims.bit.edu.cn/xztd/qkjs/4c78910cdd044179a185392b4e3bc101.htm). Exploring deep learning and computer vision is the theme of my research journey."
+  links = [
+    { email = "mailto:sylvanding@qq.com" },
+  #   { link = "https://blog.csdn.net/IYXUAN" },
+  #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
+  #   { apple = "https://www.apple.com" },
+  #   { blogger = "https://username.blogspot.com/" },
+  #   { codepen = "https://codepen.io/username" },
+  #   { dev = "https://dev.to/username" },
+  #   { discord = "https://discord.gg/invitecode" },
+  #   { dribbble = "https://dribbble.com/username" },
+    { facebook = "https://facebook.com/sylvanding" },
+  #   { flickr = "https://www.flickr.com/photos/username/" },
+  #   { foursquare = "https://foursquare.com/username" },
+    { github = "https://github.com/sylvanding" },
+  #   { gitlab = "https://gitlab.com/username" },
+  #   { google = "https://www.google.com/" },
+  #   { google-scholar = "https://scholar.google.com/citations?user=user-id" },
+  #   { hashnode = "https://username.hashnode.dev" },
+  #   { instagram = "https://instagram.com/username" },
+  #   { keybase = "https://keybase.io/username" },
+  #   { kickstarter = "https://www.kickstarter.com/profile/username" },
+  #   { lastfm = "https://lastfm.com/user/username" },
+    { linkedin = "https://linkedin.com/in/sylvanding" },
+  #   { mastodon = "https://mastodon.instance/@username" },
+  #   { medium = "https://medium.com/username" },
+  #   { mendeley = "https://www.mendeley.com/" },
+  #   { microsoft = "https://www.microsoft.com/" },
+    { orcid = "https://orcid.org/0009-0005-6009-3389" },
+  #   { patreon = "https://www.patreon.com/username" },
+  #   { pinterest = "https://pinterest.com/username" },
+    { reddit = "https://reddit.com/user/sylvanding" },
+  #   { researchgate = "https://www.researchgate.net/profile/username" },
+  #   { slack = "https://workspace.url/team/userid" },
+  #   { snapchat = "https://snapchat.com/add/username" },
+  #   { soundcloud = "https://soundcloud.com/username" },
+    { stack-overflow = "https://stackoverflow.com/users/25069763/sylvan-ding" },
+  #   { steam = "https://steamcommunity.com/profiles/userid" },
+  #   { telegram = "https://t.me/username" },
+  #   { tiktok = "https://tiktok.com/@username" },
+  #   { tumblr = "https://username.tumblr.com" },
+  #   { twitch = "https://twitch.tv/username" },
+  #   { whatsapp = "https://wa.me/phone-number" },
+    { x-twitter = "https://x.com/sylvanding" },
+  #   { youtube = "https://youtube.com/username" },
+  ]

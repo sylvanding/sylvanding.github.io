@@ -1,0 +1,39 @@
+{{/* timer */}}
+{{ if .Site.Params.timer | default false }}
+  <div class="flex items-center justify-between">
+    <div>
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">🚀 {{ i18n "footer.runningdays_notice" }} <span id="runningdays"></span> {{ i18n "footer.runningdays_days" }}</p>
+    </div>
+  </div>
+  {{ with resources.Get "plugins/timer/timer.js" }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+{{ end }}
+
+{{/* Beian */}}
+{{ if .Site.Params.footer.showBeian | default false }}
+  <div class="flex items-center justify-center">
+    <p class="mt-6 text-sm text-neutral-500 dark:text-neutral-400">
+      {{ .Site.Params.footer.Beian | emojify | markdownify }}
+    </p>
+  </div>
+{{ end }}
+
+{{/* plugins */}}
+
+{{/* NProgress@0.2.0 */}}
+{{ if .Site.Params.nprogress | default false }}
+  {{ with resources.Get "plugins/nprogress/nprogress.js" }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+  {{ with resources.Get "plugins/nprogress/nprogress.css" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" />
+  {{ end }}
+  <script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+      if (document.readyState === "interactive") NProgress.inc(0.8);
+      if (document.readyState === "complete") NProgress.done();
+    });
+  </script>
+{{ end }}

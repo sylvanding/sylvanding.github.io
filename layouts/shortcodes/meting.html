@@ -1,0 +1,16 @@
+<meting-js server="{{ .Get "server" }}" type="{{ .Get "type" }}" id="{{ .Get "id" }}" theme="#ffbb64" preload="none"></meting-js>
+
+{{/* MetingJS@2.0.x */}}
+{{ if .Site.Params.MetingJS | default false }}
+  <!-- require APlayer -->
+  {{ with resources.Get "plugins/APlayer/APlayer.min.css" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" />
+  {{ end }}
+  {{ with resources.Get "plugins/APlayer/APlayer.min.js" }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+  <!-- require MetingJS -->
+  {{ with resources.Get "plugins/Meting/Meting.min.js" }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+{{ end }}

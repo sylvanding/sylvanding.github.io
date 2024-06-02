@@ -1,0 +1,69 @@
+languageCode = "zh-cn"
+languageName = "中文简体"
+languageDirection = "ltr"
+weight = 2
+
+title = "Sylvan Ding"
+copyright = "&copy; 2024 [Sylvan Ding](https://github.com/sylvanding) :star2:"
+
+[params]
+  dateFormat = "Mon Jan 2, 15:04, 2006"
+
+  # mainSections = ["posts", "projects", "welcome"]
+  mainSections = ["welcomes"]
+  description = "欢迎来到纪翔的博客 - 这里不仅仅是一个技术分享的空间，更是记录我在生活、旅行、阅读和科研道路上的所思所感。从技术探索到日常生活的点点滴滴，我希望与你共同分享这个丰富多彩的世界。让我们一起，发现生命中不可思议的美好。"
+
+[params.author]
+  name = "Sylvan Ding"
+  image = "img/author.png"
+  headline = """
+  [北京理工大学医学技术学院](https://smt.bit.edu.cn/)研究生<br>\
+  [前沿交叉科学研究院](https://arims.bit.edu.cn/xztd/qkjs/4c78910cdd044179a185392b4e3bc101.htm)[XuLab](http://www.xulab.cc/)成员<br>\
+  AI食品营养量化初创公司联合创始人
+  """
+  bio = "就读于[北京理工大学医学技术学院](https://smt.bit.edu.cn/)，致力于超时空分辨率的单分子定位显微成像(SMLM)技术研究。热爱摄影:camera:、旅行:airplane:和阅读:books:。在这里，我将分享科研进展和日常点滴。期待与你们共同交流！"
+  links = [
+    { email = "mailto:sylvanding@qq.com" },
+    { csdn = "https://blog.csdn.net/IYXUAN" },
+  #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
+  #   { apple = "https://www.apple.com" },
+  #   { blogger = "https://username.blogspot.com/" },
+  #   { codepen = "https://codepen.io/username" },
+  #   { dev = "https://dev.to/username" },
+  #   { discord = "https://discord.gg/invitecode" },
+  #   { dribbble = "https://dribbble.com/username" },
+  #   { facebook = "https://facebook.com/sylvanding" },
+  #   { flickr = "https://www.flickr.com/photos/username/" },
+  #   { foursquare = "https://foursquare.com/username" },
+    { github = "https://github.com/sylvanding" },
+  #   { gitlab = "https://gitlab.com/username" },
+  #   { google = "https://www.google.com/" },
+  #   { google-scholar = "https://scholar.google.com/citations?user=user-id" },
+  #   { hashnode = "https://username.hashnode.dev" },
+  #   { instagram = "https://instagram.com/username" },
+  #   { keybase = "https://keybase.io/username" },
+  #   { kickstarter = "https://www.kickstarter.com/profile/username" },
+  #   { lastfm = "https://lastfm.com/user/username" },
+    { linkedin = "https://linkedin.com/in/sylvanding" },
+  #   { mastodon = "https://mastodon.instance/@username" },
+  #   { medium = "https://medium.com/username" },
+  #   { mendeley = "https://www.mendeley.com/" },
+  #   { microsoft = "https://www.microsoft.com/" },
+    { orcid = "https://orcid.org/0009-0005-6009-3389" },
+  #   { patreon = "https://www.patreon.com/username" },
+  #   { pinterest = "https://pinterest.com/username" },
+  #   { reddit = "https://reddit.com/user/sylvanding" },
+  #   { researchgate = "https://www.researchgate.net/profile/username" },
+  #   { slack = "https://workspace.url/team/userid" },
+  #   { snapchat = "https://snapchat.com/add/username" },
+  #   { soundcloud = "https://soundcloud.com/username" },
+  #   { stack-overflow = "https://stackoverflow.com/users/25069763/sylvan-ding" },
+  #   { steam = "https://steamcommunity.com/profiles/userid" },
+  #   { telegram = "https://t.me/username" },
+  #   { tiktok = "https://tiktok.com/@username" },
+  #   { tumblr = "https://username.tumblr.com" },
+  #   { twitch = "https://twitch.tv/username" },
+  #   { whatsapp = "https://wa.me/phone-number" },
+  #   { x-twitter = "https://x.com/sylvanding" },
+  #   { youtube = "https://youtube.com/username" },
+  ]

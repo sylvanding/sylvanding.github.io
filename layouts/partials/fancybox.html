@@ -1,0 +1,12 @@
+{{/* Fancybox/ui@5.0 */}}
+{{ if .Site.Params.article.fancybox | default false }}
+  {{ with resources.Get "plugins/fancybox/fancybox.umd.js" }}
+    <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+  {{ with resources.Get "plugins/fancybox/fancybox.css" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" />
+  {{ end }}
+  <script>
+    Fancybox.bind()
+  </script>
+{{ end }}
