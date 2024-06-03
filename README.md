@@ -1,5 +1,7 @@
 # Welcome to My New Blog: Powered by Hugo and Styled with Congo
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3d7d4e8d-e53b-4a32-b8d4-9720262d310a/deploy-status)](https://app.netlify.com/sites/sylvanding/deploys)
+
 **Hello and welcome to my brand-new blog! I'm thrilled to have you here and excited to share the news of its launch. After a lot of planning and designing, I've finally rolled out this platform as a space to share my thoughts, experiences, and knowledge.**
 
 ## Why I Chose Hugo and the Congo Theme

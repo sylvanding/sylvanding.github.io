@@ -6,6 +6,9 @@ description = "Explore the unique features of my blog powered by Hugo, the benef
 summary = "Explore the unique features of my blog powered by Hugo, the benefits of the Congo theme based on Tailwind CSS 3, and the versatility of Markdown functionalities, including Hugo's shortcodes."
 tags = ['Blogging', 'Hugo', 'Congo', 'Markdown', 'Shortcodes']
 showWordCount = true
+showEdit = true
+editURL = "https://github.com/sylvanding/sylvanding.github.io/tree/main/content"
+editAppendPath = true
 +++
 
 {{< alert "tag" >}}
@@ -43,6 +46,23 @@ Choosing the [Congo](https://github.com/jpanther/congo) theme was a straightforw
 ## Leveraging Markdown for Enhanced Content Creation
 
 Markdown is a lightweight markup language that makes it simpler to write formatted text but with plain text. By using Markdown, I ensure that my writing process remains straightforward yet powerful. Hugo further enriches this by integrating [Shortcodes](https://gohugo.io/content-management/shortcodes/)—a way to embed richer content elements directly within Markdown.
+
+### Hugo Internal Shortcodes
+
+#### Code Block Highlight
+
+{{< highlight html "linenos=table,hl_lines=4 7-9" >}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Example HTML5 Document</title>
+</head>
+<body>
+  <p>Test</p>
+</body>
+</html>
+{{< /highlight >}}
 
 ### Congo Shortcodes
 
@@ -297,7 +317,7 @@ To create a shortcode, place an HTML template in the `layouts/shortcodes` direct
 
 Music Block shortcodes require [APlayer](https://github.com/MoePlayer/APlayer) and [MetingJS](https://github.com/metowolf/MetingJS). Place the downloaded js and css files in the `assets/plugins` directory:
 
-```js
+```html
 <!-- require APlayer -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
@@ -305,9 +325,10 @@ Music Block shortcodes require [APlayer](https://github.com/MoePlayer/APlayer) a
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 ```
 
-Then, import them in `layouts/partials/extend-footer.html`:
+Then create a `layouts/shortcodes/meting.html` file:
 
 ```md
+<meting-js server="{{ .Get "server" }}" type="{{ .Get "type" }}" id="{{ .Get "id" }}"></meting-js>
 {{/* MetingJS@2.0.x */}}
 {{ if .Site.Params.MetingJS | default false }}
   <!-- require APlayer -->
@@ -322,12 +343,6 @@ Then, import them in `layouts/partials/extend-footer.html`:
     <script src="{{ .RelPermalink }}"></script>
   {{ end }}
 {{ end }}
-```
-
-The contents of the `layouts/shortcodes/meting.html` are as follows:
-
-```html
-<meting-js server="{{ .Get "server" }}" type="{{ .Get "type" }}" id="{{ .Get "id" }}"></meting-js>
 ```
 
 **Example:**
